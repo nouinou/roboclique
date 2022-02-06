@@ -13,11 +13,11 @@ class App extends Component {
 	}
 
 	componentDidMount = async () => {
-		const data = await this.fetUsers();
+		const data = await this.fetchUsers();
 		this.setState({ data });
 	};
 
-	fetUsers = async () => {
+	fetchUsers = async () => {
 		const response = await (
 			await fetch('https://reqres.in/api/users?page=1&per_page=10')
 		).json();
