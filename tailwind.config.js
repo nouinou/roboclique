@@ -2,6 +2,9 @@ module.exports = {
 	content: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
 		extend: {
+			height: {
+				content: 'Calc(100vh - 20vh - 1.5em)',
+			},
 			width: {
 				avatar: '192px',
 			},
