@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: 'COMPUTER ROBOT FONT';
   font-style: normal;
@@ -15,12 +19,9 @@ body {
   background-color: #282C34;
 }
 
-.App {
-  text-align: center;
-}
-
 .robo-text {
   font-family: 'COMPUTER ROBOT FONT', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-    letter-spacing: 1vw;
+  letter-spacing: 1vw;
+  text-transform: uppercase;
 }
