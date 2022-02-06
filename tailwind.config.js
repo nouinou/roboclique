@@ -2,9 +2,12 @@ module.exports = {
 	content: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
 		extend: {
+			width: {
+				avatar: '192px',
+			},
 			colors: {
 				primary: '#3E4451',
-				accent: '#282C34',
+				bg: '#282C34',
 			},
 			minWidth: {
 				300: '300px',
