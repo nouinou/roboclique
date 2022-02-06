@@ -16,6 +16,15 @@ module.exports = {
 				20: '20vh',
 				content: 'Calc(100vh - 20vh - 1.5em)',
 			},
+			animation: {
+				wiggle: 'wiggle 1s ease-in-out infinite',
+			},
+			keyframes: {
+				wiggle: {
+					'0%, 100%': { transform: 'rotate(-1deg)' },
+					'50%': { transform: 'rotate(1deg)' },
+				},
+			},
 		},
 	},
 	plugins: [],
