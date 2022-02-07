@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.80dba81c.css",
+    "main.js": "/static/js/main.5ff0db7c.js",
+    "static/js/377.c88196e6.chunk.js": "/static/js/377.c88196e6.chunk.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/COMPUTER-Robot.ttf.woff": "/static/media/COMPUTER-Robot.ttf.a5d4c7b1ff19305de747.woff",
+    "index.html": "/index.html",
+    "main.80dba81c.css.map": "/static/css/main.80dba81c.css.map",
+    "main.5ff0db7c.js.map": "/static/js/main.5ff0db7c.js.map",
+    "377.c88196e6.chunk.js.map": "/static/js/377.c88196e6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80dba81c.css",
+    "static/js/main.5ff0db7c.js"
+  ]
+}
