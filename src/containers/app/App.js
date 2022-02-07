@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import CardList from '../../components/card-list/CardList';
-import Header from '../../components/header/Header';
-import Scroll from '../../components/scroll/Scroll';
+import Header from '../../components/shared/header/Header';
+import Scroll from '../../components/shared/scroll/Scroll';
 import { SearchRobots } from '../../data/search/search-actions';
 import { FetchRobots } from '../../data/robots/robots-actions';
-import ErrorBoundary from '../../components/error-boundary/ErrorBoundary';
+import ErrorBoundary from '../../components/shared/error-boundary/ErrorBoundary';
 
 const mapStateToProps = (state) => {
 	const { robots } = state;
