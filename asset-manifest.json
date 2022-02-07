@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/roboclique/static/css/main.08876ba8.css",
+    "main.css": "/roboclique/static/css/main.9cfa6209.css",
     "main.js": "/roboclique/static/js/main.37df3291.js",
     "static/js/377.c88196e6.chunk.js": "/roboclique/static/js/377.c88196e6.chunk.js",
     "service-worker.js": "/roboclique/service-worker.js",
     "static/media/COMPUTER-Robot.ttf.woff": "/roboclique/static/media/COMPUTER-Robot.ttf.a5d4c7b1ff19305de747.woff",
     "index.html": "/roboclique/index.html",
-    "main.08876ba8.css.map": "/roboclique/static/css/main.08876ba8.css.map",
+    "main.9cfa6209.css.map": "/roboclique/static/css/main.9cfa6209.css.map",
     "main.37df3291.js.map": "/roboclique/static/js/main.37df3291.js.map",
     "377.c88196e6.chunk.js.map": "/roboclique/static/js/377.c88196e6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08876ba8.css",
+    "static/css/main.9cfa6209.css",
     "static/js/main.37df3291.js"
   ]
 }
