@@ -5,6 +5,7 @@ import Header from '../../components/header/Header';
 import Scroll from '../../components/scroll/Scroll';
 import { SearchRobots } from '../../data/search/search-actions';
 import { FetchRobots } from '../../data/robots/robots-actions';
+import ErrorBoundary from '../../components/error-boundary/ErrorBoundary';
 
 const mapStateToProps = (state) => {
 	const { robots } = state;
@@ -35,7 +36,9 @@ class App extends Component {
 			this.showMessage('Loading...')
 		) : users && users.length ? (
 			<Scroll>
-				<CardList users={users} />
+				<ErrorBoundary>
+					<CardList users={users} />
+				</ErrorBoundary>
 			</Scroll>
 		) : (
 			this.showMessage('No robot was found')
@@ -50,8 +53,6 @@ class App extends Component {
 			isFetching,
 			error,
 		} = this.props;
-
-		console.log(this.props);
 
 		const users =
 			data &&
