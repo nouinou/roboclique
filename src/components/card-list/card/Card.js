@@ -6,6 +6,8 @@ const Card = (props) => {
 			<img
 				className="robo-img text-center w-avatar"
 				src={user.image}
+				height="192"
+				width="192"
 				alt="robot"
 			/>
 			<span className="robo-text text-primary text-2xl font-bold capitalize">
