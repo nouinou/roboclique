@@ -7,6 +7,7 @@
   font-style: normal;
   font-weight: normal;
   src: local('COMPUTER ROBOT FONT'), url('./assets/fonts/COMPUTER-Robot.ttf.woff') format('woff');
+  font-display: swap;
   }
 
 body {
