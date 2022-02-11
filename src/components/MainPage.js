@@ -9,36 +9,39 @@ class MainPage extends Component {
 
 	showMessage = (message) => (
 		<div className="flex flex-col min-h-content justify-center items-center">
-			<div className="robo-text text-2xl text-white max-w-lg">{message}</div>
+			<div id="message" className="robo-text text-2xl text-white max-w-lg">
+				{message}
+			</div>
 		</div>
 	);
 
-	dataToShow = (isFetching, users) => {
-		return isFetching ? (
-			this.showMessage('Loading...')
-		) : users && users.length ? (
-			<Scroll>
-				<ErrorBoundary>
-					<CardList users={users} />
-				</ErrorBoundary>
-			</Scroll>
-		) : (
-			this.showMessage('No robot was found')
-		);
-	};
+	showScroll = (robots) => (
+		<Scroll>
+			<ErrorBoundary>
+				<CardList robots={robots} />
+			</ErrorBoundary>
+		</Scroll>
+	);
+
+	showRobots = (robots) =>
+		this.props.isFetching
+			? this.showMessage('Loading...')
+			: robots && robots.length
+			? this.showScroll(robots)
+			: this.showMessage('No robot was found');
 
 	filterRobots = () => {
 		const { data, searchTerm } = this.props;
 		return (
 			data &&
-			data.filter((user) =>
-				user.fullname.toLowerCase().includes(searchTerm.toLowerCase())
+			data.filter((robot) =>
+				robot.fullname.toLowerCase().includes(searchTerm.toLowerCase())
 			)
 		);
 	};
 
 	render() {
-		const { onSearchTermChanged, isFetching, error } = this.props;
+		const { onSearchTermChanged, error } = this.props;
 		const robots = this.filterRobots();
 
 		return (
@@ -48,7 +51,7 @@ class MainPage extends Component {
 					? this.showMessage(
 							'Something went wrong! Please try again later or contact the developer'
 					  )
-					: this.dataToShow(isFetching, robots)}
+					: this.showRobots(robots)}
 			</div>
 		);
 	}
