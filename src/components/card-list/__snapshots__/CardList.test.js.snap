@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardList Component should render CardList 1`] = `
+<div
+  className="m-5 grid gap-5 xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-content-center"
+>
+  <Card
+    key="1"
+    robot={
+      Object {
+        "fullname": "Robo Cat",
+        "id": 1,
+      }
+    }
+  />
+  <Card
+    key="2"
+    robot={
+      Object {
+        "fullname": "Miaw Bot",
+        "id": 2,
+      }
+    }
+  />
+</div>
+`;

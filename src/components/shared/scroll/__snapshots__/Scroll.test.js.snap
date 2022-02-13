@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Scroll Component should render Scroll 1`] = `
+<div
+  className="h-content overflow-x-auto"
+/>
+`;

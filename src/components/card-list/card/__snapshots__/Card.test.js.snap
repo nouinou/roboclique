@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component should render Card 1`] = `
+<div
+  className="flex flex-col justify-center items-center w-100 bg-slate-100 m-0.5 p-10 cursor-pointer hover:animate-wiggle rounded-xl"
+>
+  <img
+    alt="robot"
+    className="robo-img text-center w-avatar"
+    height="192"
+    width="192"
+  />
+  <span
+    className="robo-text text-primary text-2xl font-bold capitalize"
+  >
+    Miaw Bot
+  </span>
+  <a
+    className="text-md hover:text-primary"
+    href="mailto:undefined"
+  />
+</div>
+`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainPage should render MainPage 1`] = `
+<div
+  className="App text-center"
+>
+  <Header />
+  <div
+    className="flex flex-col min-h-content justify-center items-center"
+  >
+    <div
+      className="robo-text text-2xl text-white max-w-lg"
+      id="message"
+    >
+      No robot was found
+    </div>
+  </div>
+</div>
+`;

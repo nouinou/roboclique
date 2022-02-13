@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component should render Header 1`] = `
+<div
+  className="header flex flex-col items-center justify-center w-screen min-h-20 bg-primary p-5 mb-6"
+>
+  <h1
+    className="robo-text text-5xl text-white md:text-7xl"
+  >
+    Robo Clique
+  </h1>
+  <SearchBox
+    searchChange={[MockFunction]}
+  />
+</div>
+`;

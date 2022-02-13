@@ -1,4 +1,8 @@
+export let prop = {};
+
 const SearchBox = ({ searchChange }) => {
+	prop.searchChange = searchChange;
+
 	return (
 		<div className="relative block mt-2">
 			<span className="stroke-slate-400 absolute inset-y-0 left-0 flex items-center pl-2">
@@ -19,7 +23,7 @@ const SearchBox = ({ searchChange }) => {
 			<input
 				className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-1 pl-9 pr-1 sm:py-2 sm:pl-9 sm:pr-3 shadow-sm focus:outline-none focus:border-slate-500 focus:ring-slate-500 focus:ring-1 text-sm md:text-md"
 				placeholder="Search robots..."
-				onChange={searchChange}
+				onChange={prop.searchChange}
 				type="search"
 			/>
 		</div>
