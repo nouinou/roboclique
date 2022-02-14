@@ -4,7 +4,7 @@ import {
 	FETCH_ROBOTS_FAILURE,
 } from './robots-actions';
 
-const robotsInitialState = {
+export const robotsInitialState = {
 	isFetching: false,
 	data: null,
 	error: null,

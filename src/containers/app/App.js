@@ -16,7 +16,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => ({
 	onSearchTermChanged: (event) => dispatch(SearchRobots(event.target.value)),
-	fetchUsers: () => dispatch(FetchRobots),
+	fetchUsers: () => dispatch(FetchRobots()),
 });
 
 class App extends Component {

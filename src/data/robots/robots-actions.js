@@ -4,7 +4,7 @@ export const FETCH_ROBOTS = 'FETCH_ROBOTS';
 export const FETCH_ROBOTS_SUCCESS = 'FETCH_ROBOTS_SUCCESS';
 export const FETCH_ROBOTS_FAILURE = 'FETCH_ROBOTS_FAILURE';
 
-export const FetchRobots = async (dispatch) => {
+export const FetchRobots = () => async (dispatch) => {
 	dispatch({ type: FETCH_ROBOTS });
 
 	try {
