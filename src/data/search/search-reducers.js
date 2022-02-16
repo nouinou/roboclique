@@ -1,10 +1,10 @@
 const { SEARCH_ROBOTS } = require('./search-actions');
 
-const initialSearchState = {
+export const searchInitialState = {
 	searchTerm: '',
 };
 
-export const searchReducer = (state = initialSearchState, action = {}) => {
+export const searchReducer = (state = searchInitialState, action = {}) => {
 	if (action.type === SEARCH_ROBOTS) {
 		return {
 			searchTerm: action.payload,
